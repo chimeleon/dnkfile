@@ -1,0 +1,17 @@
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: none
+  datasource:
+    url: jdbc:mysql://3.34.5.214:3306/dnkfile
+    hikari:
+      password: dnkfile
+      username: dnkfile
+      driver-class-name: com.mysql.cj.jdbc.Driver
