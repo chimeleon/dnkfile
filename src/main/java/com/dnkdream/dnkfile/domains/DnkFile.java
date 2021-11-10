@@ -1,5 +1,6 @@
 package com.dnkdream.dnkfile.domains;
 
+import lombok.Builder;
 import lombok.Data;
 
 import javax.persistence.Column;
@@ -18,4 +19,13 @@ public class DnkFile {
     private Long filesize;
     @Column
     private String mime;
+    @Column
+    private String key;
+    @Column
+    private Integer downloadCount;
+    @Column
+    private Integer maxDownloadCount;
+    @Column
+    @Builder.Default
+    private boolean autoDelete = true;
 }
